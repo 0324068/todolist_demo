@@ -1,0 +1,62 @@
+
+#panel{
+	background-color: #eee;
+	width: 600px;
+	margin:0 auto;
+	padding: 30px;
+}
+#todolist ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	
+}
+#todolist li{
+	display: flex;
+	padding: 10px;
+}
+li:hover{	
+    background-color: #fff;
+}
+.checkbox{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.content{
+	margin-left: 10px;
+	flex:1 0;
+	
+}
+.action{
+	width: 30px;
+	height: 30px;
+}
+.del{
+	cursor: pointer;	
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	transition-property:all;
+	transition-duration: 0.8s;
+	transform-origin:center;
+	transform:rotate(0deg);
+}
+.del:hover{	
+	transition-property:all;
+	transition-duration: 0.8s;
+	transform-origin:center;
+	transform:rotate(180deg);
+	
+}
+li.complete .checkbox{
+	background-color: #777;
+}
+li.complete .content{
+	text-decoration: line-through;
+}
+.hide{
+	display: none ;
+}
